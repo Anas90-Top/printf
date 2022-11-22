@@ -1,19 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
-<<<<<<< HEAD
-=======
 
 #include <limits.h>
->>>>>>> 41cfa1bbcc08c12be10077f829dae7ccead029dc
 #include <stdarg.h>
 #include <stdlib.h>
-<<<<<<< HEAD
-/**
- * struct structprint - structure containing
- * @q: the location and method to translate data to characters.
- * @u: print function for specific type.
- * Return: int
-=======
 #include <unistd.h>
 
 /* Flag Modifier Macros */
@@ -61,32 +51,9 @@ typedef struct converter_s
  * struct flag_s - A new type defining a flags struct.
  * @flag: A character representing a flag.
  * @value: The integer value of the flag.
->>>>>>> 41cfa1bbcc08c12be10077f829dae7ccead029dc
  */
 typedef struct flag_s
 {
-<<<<<<< HEAD
-char *q;
-int (*u)(char *format, va_list);
-}
-structype;
-int _putchar(char ch);
-int _puts(char *string);
-int printc(char *format, va_list);
-int printstr(char *format, va_list);
-int (*driver(char *format))(char *format, va_list);
-int _printf(char *format, ...);
-int printint(char *format, va_list pa);
-int integer(int number);
-int contadordigit(int number);
-int _abs(int number);
-int printpercent(char *format, va_list pa);
-int printhex(char *format, va_list);
-int printHEX(char *format, va_list);
-int printocta(char *format, va_list);
-int print_unsign(char *format, va_list);
-#endif
-=======
 	unsigned char flag;
 	unsigned char value;
 } flag_t;
@@ -146,4 +113,4 @@ unsigned int convert_sbase(buffer_t *output, long int num, char *base,
 unsigned int convert_ubase(buffer_t *output, unsigned long int num, char *base,
 		unsigned char flags, int wid, int prec);
 
->>>>>>> 41cfa1bbcc08c12be10077f829dae7ccead029dc
+#endif /* MAIN_H */
